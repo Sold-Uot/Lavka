@@ -47,7 +47,7 @@ class ProductFragment : Fragment(), Contract.view {
         savedInstanceState: Bundle?
     ): View? {
         mPresenter = Presenter(this)
-
+        val с =1
         return inflater.inflate(R.layout.fragment_product, container, false)
     }
 
