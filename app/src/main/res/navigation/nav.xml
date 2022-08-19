@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/productFragment">
+
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.example.lavka.mvp.app.screen.BasketScreen.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basketFragment_to_buttomSheetFragment2"
+            app:destination="@id/buttomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.lavka.mvp.app.screen.ProfileScreen.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/companyFragment"
+        android:name="com.example.lavka.mvp.app.screen.CompanyScreen.CompanyFragment"
+        android:label="fragment_company"
+        tools:layout="@layout/fragment_company" />
+    <dialog
+        android:id="@+id/buttomSheetFragment"
+        android:name="com.example.lavka.mvp.app.screen.BottomSheetGroupScreen.ButtomSheetFragment"
+        android:label="fragment_buttom_sheet"
+        tools:layout="@layout/fragment_buttom_sheet" >
+        <action
+            android:id="@+id/action_buttomSheetFragment_to_nav_bottom_sheet"
+            app:destination="@id/nav_bottom_sheet" />
+    </dialog>
+    <include app:graph="@navigation/nav_bottom_sheet" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.lavka.mvp.app.screen.ProductScreen.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" />
+</navigation>

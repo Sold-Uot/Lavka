@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rv_white"
+    android:layout_marginVertical="3dp"
+    android:paddingVertical="12dp">
+
+    <ImageView
+        android:id="@+id/imageViewBasket"
+        android:layout_width="150dp"
+        android:layout_height="86dp"
+
+        app:srcCompat="@drawable/mico" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameBasket"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="мясо" />
+
+        <TextView
+            android:id="@+id/priceBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/roboto_medium"
+            android:text="мясо" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/downkol"
+                android:layout_width="39dp"
+                android:layout_height="37dp"
+                android:layout_marginHorizontal="13sp"
+                android:background="@drawable/ic_baseline_arrow_circle_left_24"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/kolBasket"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="28dp"
+                android:text="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/appkol"
+                    android:layout_width="39dp"
+                    android:layout_height="37dp"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/ic_baseline_arrow_circle_right_24" />
+
+                <Button
+                    android:id="@+id/button3"
+
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/ic_baseline_delete_forever_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "994975771276",
+    "firebase_url": "https://lavka-f95ee-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "lavka-f95ee",
+    "storage_bucket": "lavka-f95ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994975771276:android:a34f40875146fe1a3ee9a9",
+        "android_client_info": {
+          "package_name": "com.example.lavka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994975771276-rd7b444bbsolj32cl1ntflaau66sde0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD6xhck3zaYlSUSpPwlcya18_gfkWTkHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994975771276-rd7b444bbsolj32cl1ntflaau66sde0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
