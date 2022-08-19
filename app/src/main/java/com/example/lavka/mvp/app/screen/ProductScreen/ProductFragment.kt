@@ -40,7 +40,7 @@ class ProductFragment : Fragment(), Contract.view {
     private var productsList: ArrayList<ImageTypeModel>? = null
     private var linearLayoutManager: LinearLayoutManager? = null
     private lateinit var pRef : SharedPreferences
-    
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
