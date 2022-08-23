@@ -61,6 +61,7 @@ class BasketFragment : Fragment(R.layout.fragment_basket), Contract.view {
             mPresenter.onClickByButton()
 
 
+            val  kkk = 12
 
 
 
