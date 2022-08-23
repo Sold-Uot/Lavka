@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.lavka.R
 
 
-class CompanyFragment : Fragment() {
+class CompanyFragment : Fragment(R.layout.fragment_company) {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,13 +16,6 @@ class CompanyFragment : Fragment() {
 
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_company, container, false)
-    }
 
 
 }
