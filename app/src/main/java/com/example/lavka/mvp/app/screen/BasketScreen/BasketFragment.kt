@@ -27,6 +27,7 @@ class BasketFragment : Fragment(R.layout.fragment_basket), Contract.view {
 
     val mPresenter: Presenter = Presenter(this)
 
+    val s = 12
     companion object {
         lateinit var byButton: Button
          fun RxLoadBasketArray(): Observable<ArrayList<ProductCartModel>> {
