@@ -67,6 +67,7 @@ class BasketFragment : Fragment(R.layout.fragment_basket), Contract.view {
 
 
 
+            val pa = 333
 
         }
 
