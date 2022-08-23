@@ -62,6 +62,7 @@ class BasketFragment : Fragment(R.layout.fragment_basket), Contract.view {
 
 
             val  kkk = 12
+            val dd = 131
 
 
 
