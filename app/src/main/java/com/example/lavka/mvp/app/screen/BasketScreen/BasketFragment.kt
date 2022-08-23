@@ -29,7 +29,7 @@ class BasketFragment : Fragment(R.layout.fragment_basket), Contract.view {
 
     companion object {
         lateinit var byButton: Button
-        public fun RxLoadBasketArray(): Observable<ArrayList<ProductCartModel>> {
+         fun RxLoadBasketArray(): Observable<ArrayList<ProductCartModel>> {
             return Observable.create { subscriber ->
 
 
