@@ -4,6 +4,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'kotlin-kapt'
 
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -40,10 +41,7 @@ buildFeatures{
 
 dependencies {
     def nav_version = "2.5.1"
-    def dagger_version = "2.40"
-    implementation "com.google.dagger:dagger:$dagger_version"
-    kapt "com.google.dagger:dagger-compiler:$dagger_version"
-    //Internet
+
 
 //    implementation "com.squareup.retrofit2:retrofit:2.9.0"
 //    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
@@ -56,6 +54,15 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
+
+    def hilt = "2.37"
+    implementation "com.google.dagger:hilt-android:$hilt"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt"
+
+    def hilt_lifecycle_viewmodel = "1.0.0-alpha03"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_lifecycle_viewmodel"
+    kapt "androidx.hilt:hilt-compiler:$hilt_lifecycle_viewmodel"
+
 
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -77,4 +84,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+kapt {
+    correctErrorTypes true
 }

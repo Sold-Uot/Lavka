@@ -13,8 +13,9 @@ import com.example.lavka.mvp.Contract
 
 import com.example.lavka.mvp.presenter.Presenter
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(), Contract.view {
     var TAG: String = "MainActivity"
 
@@ -31,7 +32,6 @@ class MainActivity : AppCompatActivity(), Contract.view {
         actionBar?.hide()
         setContentView(R.layout.activity_main)
         mPresenter = Presenter(this)
-
         buttonNav = findViewById(R.id.ButtomNavBar)
         mPresenter.onSelectButtonNavBarP()
 

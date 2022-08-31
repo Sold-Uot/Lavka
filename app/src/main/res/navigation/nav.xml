@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/companyFragment"
-        android:name="com.example.lavka.mvp.app.screen.CompanyScreen.CompanyFragment"
+        android:name="com.example.lavka.mvp.app.screen.CompanyScreen.Presentation.CompanyFragment"
         android:label="fragment_company"
         tools:layout="@layout/fragment_company" />
     <dialog
